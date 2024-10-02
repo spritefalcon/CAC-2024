@@ -3,20 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
 </head>
 <body>
-    <div>
-        <h1>Welcome, ABC123.</h1>
-        <h3>Today is September 24, 2024.</h3>
-        <h3>It is 3:00 P.M.</h3>
-        <h3>You have 2 meetings with:</h3>
-        <h2>Mr. XYZ in room 100, at 3:30 P.M.</h2>
-        <h2>Mr. ABC in an online meeting, at 4:45 P.M.</h2>
-    </div>
-    <div>
-        <h2>Ready to check in?</h2>
-        <button>CHECK IN</button>
+    <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#calendar">Calendar</a>
+        <a href="#checkin">Check In</a>
+        <a href="#addclass">Add Class</a>
+        <a href="#profile">Profile</a>
+    </nav>
+    <div class="flexbox">
+        <div class="flexbox-child">
+            <p class="xl">Welcome, ABC123.</p>
+            <p class="small">Today is September 24, 2024.</p>
+            <p class="small">It is 3:00 P.M.</p>
+            <p class="large">You have 2 meetings with:</p>
+            <p class="medium">Mr. XYZ in room 100, at 3:30 P.M.</p>
+            <p class="medium">Mr. ABC in an online meeting, at 4:45 P.M.</p>
+            <div class="checkin">
+                <p class="small">Ready to check in?</p>
+                <button>CHECK IN</button>
+            </div>
+        </div>
+        <div class="flexbox-child">
+            <img src="resources/calendar.jpg" alt="calendar">
+        </div>
     </div>
 </body>
 </html>
